@@ -1,0 +1,291 @@
+// 轮播图
+Swiper{
+    width:94vw;
+    margin:0 auto;
+    height:35vw;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top:3vw;
+    image{
+        width:95vw;
+        height:35vw
+    }
+   
+}
+
+// 提醒我
+.remind_view{
+    background-image: url(https://www.qihuanchuangke.cn/addons/hc_takeout/template/mobile/img/bgImg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0.8rem 0.8rem 0;
+    padding: 3vw;
+    border-radius: 20px;
+    .content{
+        background-image: url(https://www.qihuanchuangke.cn/addons/hc_takeout/template/mobile/img/remind_bgImg.png?v=525);
+        background-size: 100% 100%;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        padding: 2.5vw 4vw;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        .left{
+            .top{
+                font-size:1rem;
+                font-weight: bold;
+                color: #121211;
+                align-items: center;
+            }
+
+            .bottom{
+                font-size:0.7rem;
+                color: #7b7b7b;
+                margin-top: 4px;
+            }
+            
+        }
+        .right{
+            .at-switch{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .at-switch__title{
+                font-size:25px;
+                font-weight: bold;
+                margin-right: 10px;
+            }
+            .at-switch__switch{
+                width:20vm;
+                height:6vm;
+                border-radius: 8vw;
+                padding: 0.5vw;
+                box-sizing: border-box;
+                position: relative;
+                zoom:0.7;
+            }
+            .cont{
+                font-size:0.7rem;
+                color: #7b7b7b;
+            }
+        }
+        
+    }
+
+}
+
+// 主要内容
+
+@keyframes mymove {
+    0%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform: scale(1.0);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}
+
+
+.Detail_div{
+    width: 94vw;
+    margin: 0.3rem auto 0;
+    padding-bottom: 24vw;
+    .Detail_lists{
+        display: flex;
+        align-items: center;
+        width: 96vw;
+        height: 26vw;
+        margin-top: 3vw;
+        position: relative;
+        .bg{
+            position: absolute;
+            z-index: -1;
+            width:100%;
+            height:100%;
+        }
+        .left{
+            width:23vw;
+            text-align: center;
+            image{
+                width: 8vw;
+                height: 8vw;
+                margin:0 auto
+            }
+            .text{
+                font-size: 3.5vw;
+                color: #f5f5f5;
+                margin-top: 0.15rem;
+
+            }
+        }
+        .content{
+            margin-left: 5vw;
+            .title1{
+                font-size: 4vw;
+                color: #121212;
+                font-weight: bold;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            .money{
+                display: flex;
+                align-items: baseline;
+                .qian{
+                    font-size: 6vw;
+                    color: #ff1a2a;
+                    font-weight: bold;
+                    .dan{
+                        font-size: 3vw;
+                        color: #ff1a2a;
+                        line-height: 0.3rem;
+                    }
+                }
+                .remain{
+                    font-size: 3vw;
+                    color: #ff1a2a;
+                    padding: 0 0.07rem;
+                    border: solid 1px #ff1a2a;
+                    border-radius: 1vw;
+                    margin-left: 2vw;
+                }
+                
+            }
+            
+        }
+        .right{
+            min-width: 26vw;
+            width: 26vw;
+            margin-top: 0.12rem;
+            height: 88%;
+            margin-left: 6vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .btn{
+                background-image: linear-gradient(0deg , rgba(255, 26, 42, 1) 0%, #ff1a5b 100%);
+                width:5rem;
+                height:2rem;
+                color:#FFFFFF;
+                border-radius: 5rem;;
+                line-height:2rem;
+                text-align:center;
+                font-size: 0.8rem;
+                animation:mymove 3s infinite;
+            }
+        }
+    }
+
+}
+
+// 提醒我点击之后
+.shade_main{
+    .shade{
+        position: fixed;
+        left:0;
+        right:0;
+        top:0;
+        bottom: 0;
+        background:rgba(0,0,0,.8);
+        z-index:3
+    }
+    .shade_content{
+        width: 64vw;
+        border-radius: 6px;
+        overflow: hidden;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 22;
+        transform: translate(-50%,-50%);
+        .content_top{
+            padding: 6vw 0 2vw;
+            background: #fff;
+            Text{
+                font-size: 25px;
+                color: #2D2D2D;
+                display: block;
+                text-align: center;
+            }
+            image{
+                width: 46vw;
+                height: 46vw;
+                margin: 3vw auto 0;
+                display: block;
+            }
+        }
+        .content_center{
+            margin-top:-2px;
+            image{
+                width: 64vw;
+                height: 7.2605vw;
+                display: block;
+            }
+        }
+        .content_bottom{
+            padding: 2vw 0 6vw;
+            background: #fff;
+            margin-top:-2px;
+            Text{
+                display: block;
+                font-size: 25px;
+                color: #FE2231;
+                display: block;
+                text-align: center;
+                margin-bottom: 2px;
+            }
+        }
+    }
+}
+
+// 点击饿了么天天抢红包
+.at-curtain__container{
+    width: 67vw;
+    height: 88vw;
+    background-color: #ffffff;
+    border-radius: 1vw;
+    margin: 30vw auto 0;
+    box-sizing: border-box;
+    .at-curtain__body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        image{
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            position: relative;
+            zoom: 0.8;
+        }
+        Text{
+            font-size: 32px;
+            color: #121211;
+            text-align: center;
+            margin-top: 32px;
+        }
+        .btn{
+            width: 43vw;
+            height: 9vw;
+            background-color: #ffffff;
+            border-radius: 4vw;
+            border: solid 1px #ff1a2a;
+            font-size: 4vw;
+            color: #ff1a2a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 6vw auto 0;
+        }
+        .at-curtain__btn-close--bottom{
+            bottom:-220px;
+        }
+    }
+   
+}

@@ -1,0 +1,28 @@
+.Order{
+    .at-tabs__item {
+        height: 10vw;
+        padding: 0 1vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        font-size: 42px;
+        color: #121212;
+    }
+    .at-tabs__item--active{
+        color: #ff1a2a;
+        font-weight: bold;
+    }
+    .at-tabs__item-underline{
+        background-color: #ff1a2a;
+        width: 9vw;
+        height: 0.7vw;
+        left:30%;
+    }
+    .tail{
+        font-size: .38rem;
+        color: #A6A6A6;
+        text-align: center;
+        height: 14vw;
+    }
+}

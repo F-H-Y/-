@@ -1,0 +1,177 @@
+.TianTian{
+    background:rgb(245,245,245);
+    padding-bottom:20px;
+
+    // 顶部图片
+    .img_top{
+        image{
+            width:100%;
+            height:240px;
+        }
+    }
+
+    // 综合排名
+    .content{
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left:35px;
+        padding-right:35px;
+        margin: 0 24px;
+        border-radius: 12px;
+        height:88px;
+        align-items: center;
+        View{
+            font-size:28px;
+            color: #858687;
+            .at-icon-chevron-down{
+                font-weight: 700;
+            }
+        }
+        .content_left{
+            Text{
+                font-weight: 700;
+                color: #33312D;
+            }
+        }
+    }
+
+    // 主要内容
+    .container{
+        margin-top:20px;
+        .lis{
+            position: relative;
+            padding: 40px 26px;
+            margin: 0 24px 20px 24px;
+            background-color: #fff;
+            box-sizing: border-box;
+            .lis_top{
+                margin: 0;
+                padding: 0 0 0.3rem;
+                display: flex;
+                justify-content: space-between;
+                .top_left{
+                    float: left;
+                    width:120px;
+                    height: 120px;
+                    overflow: hidden;
+                    border-radius: 5px;
+                    image{
+                        width:120px;
+                        height: 100px;
+                        transform: scale(1.3);
+                    }
+                }
+                .top_center{
+                    max-width: 480px;
+                    .top_center_title{
+                        font-size: 30px;
+                    }
+                    .center_con{
+                        font-size: 22px;
+                        color: #6C6C6C;
+                        white-space: nowrap;
+                        margin-bottom: 20px;
+                    }
+                    .center_bottom{
+                        color: #FF4444;
+                        font-size: 22px;
+                        font-weight: 300;
+                        .man{
+                            display: inline-block;
+                            font-size: 20px;
+                            color: #fff;
+                            background-color: #FF4444;
+                            padding: 0 8px;
+                            height: 28px;
+                            line-height: 28px;
+                            text-align: center;
+                            box-sizing: border-box;
+                            border-radius: 4px;
+                        }
+                    }
+                }
+
+                .top_right{
+                    width:96px;
+                    image{
+                        width:96px;
+                        height:28px;
+                    }
+                }
+            }
+
+            .lis_bottom{
+                display: flex;
+                justify-content: space-between;
+                .td_lis{
+                    border: 1px solid #DADADA;
+                    box-sizing: border-box;
+                    width: 210px;
+                    border-radius: 4px;
+                    margin-right:10px;
+                    .td_lis_top{
+                        position: relative;
+                        Text{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            border-top-left-radius: 4px;
+                            height: 28px;
+                            background: #FF4444;
+                            width:60px ;
+                            display: flex;
+                            align-items: center;
+                            color:#fff;
+                            font-size: 22px;
+                            justify-content: center;
+                        }
+                        image{
+                            display: inline-block;
+                            width: 208px;
+                            height: 157px;
+                            margin-bottom: 11px;
+                            border-radius: 4px 4px 0 0;
+                        }
+
+                    }
+
+                    .td_lis_bottom{
+                        width: 208px;
+                        .text_title{
+                            width: 208px;
+                            color: #353535;
+                            font-size:24px;
+                            line-height: 30px;
+                            margin-bottom: 7px;
+                            margin-left: 6px;
+                            margin-right: 26px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            display: block;
+                        }
+                        .bottom_text{
+                            .xian{
+                                font-size:24px;
+                                color: #FF4444;
+                                Text{
+                                    font-size:20px;
+                                }
+                            }
+
+                            .yuan{
+                                color: #888888;
+                                font-size: 0.2rem;
+                                text-decoration: line-through;
+                                position: relative;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

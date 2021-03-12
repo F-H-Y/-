@@ -1,0 +1,139 @@
+.my{
+    position: relative;
+    background: #fcfcfc;
+    z-index:-2;
+    .myimg{
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        border: none;
+        zoom:0.7;
+        z-index: -1;
+    }
+    .my_User{
+        width: 94vw;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        margin-bottom: 3.6vw;
+        margin: 4vw auto 0;
+        image{
+            width: 11vw;
+            height: 11vw;
+            border-radius: 100%;
+            overflow: hidden;
+            border: 1px solid #FFFFFF;
+        }
+        .my_logo{
+            color: #FFFFFF;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .card{
+        width: 94vw;
+        margin: 4vw auto 0;
+        .ca{
+            border-radius: 3vw;
+            background-color: #FFFFFF;
+            margin-bottom: 2.8vw;
+            border-radius: 3vw;
+            overflow: hidden;
+            box-shadow: 0px 0px 27px 0px rgba(0,0,0,0.06);
+        }
+
+        // 课提现金
+        .card_item{
+            padding: 4.9vw;
+            .card_top{
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px dashed #ff1a2a;
+                padding-bottom: 4.1vw;
+                .left{
+                    .left_title{
+                        font-size: 24px;
+                        margin-bottom: 1vw;
+                    }
+                    .left_money{
+                        color: #ff1a2a;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        margin-bottom: 2.5vw;
+                    }
+                    .wait{
+                        font-size: 24px;
+                        color: #121212;
+                        Text{
+                            color: #ff1a2a;
+                            font-weight: 500;
+                            font-size: 28px;
+                        }
+                    }
+                }
+                .right{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .right_btn{
+                        font-size:28px;
+                        background-color: #ff1a2a;
+                        box-shadow: 0px 2px 16px 0px rgba(255 ,26, 42 , 0.42);
+                        height: 6.6vw;
+                        border-radius: 6.6vw;
+                        padding: 0 5vw;
+                        display: flex;
+                        align-items: center;
+                        margin: 3vw 0 2.5vw 0;
+                        color: #FFFFFF;
+                    }
+                    .right_text{
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            .card_bottom{
+                padding-top: 4.5vw;
+                font-size: 25px;
+                display: flex;
+                View{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    .card_num{
+                        font-size: 25px;
+                        font-weight: 500;
+                        color: #ff1a2a;
+                        margin-top: 1.5vw;
+                    }
+                }
+            }
+        }
+
+        // 图片
+        .card_img{
+            image{
+                width: 100%;
+                display: block;
+                zoom:0.45;
+            }
+        }
+
+        // 栅格
+        .grid{
+            .content-inner__text{
+                font-size: 25px;
+                margin-top: 0.58vw;
+                color: #121212;
+            }
+        }
+    }
+}

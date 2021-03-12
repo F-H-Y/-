@@ -1,0 +1,87 @@
+.Team{
+    padding: 30px;
+    background-color: #F8F8F8;
+    position: absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+
+    // 我的团队
+    .my_team{
+        background-color: #ffffff;
+        border-radius: 30px;
+        padding: 80px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url('https://www.qihuanchuangke.cn/addons/hc_takeout/template/mobile/img/my_bgImg.png?222');
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position-x: 420px;
+        background-position-y: 30px;
+        margin-bottom: 36px;
+        box-shadow: 0px 0px 27px 0px rgba(0 ,0, 0 ,0.06);
+        .my_title{
+            font-size: 40px;
+            color: #121212;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            image{
+                height: 40px;
+                margin-right: 20px;
+                width:60px;
+            }
+        }
+        .con{
+            color: #ff1a2a;
+            font-weight: bold;
+            font-size: 65px;
+        }
+    }
+
+    // 人数变化
+    .team_change{
+        padding: 46px 0;
+        overflow-y: auto;
+        display: flex;
+        background-color: #FFFFFF;
+        border-radius: 30px;
+        margin-bottom: 32px;
+        align-items: center;
+        box-shadow: 0px 0px 27px 0px rgba(0 ,0, 0 ,0.06);
+        .kuang{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            font-weight: bold;
+            .change_title{
+                font-size: 40px;
+                color: #121212;
+            }
+            .change_con{
+                color: #ff1a2a;
+                font-size: 40px;
+            }
+        }
+        .ge{
+            width:2px;
+            height:54px;
+            background-color: #d8d8d8;
+        }
+    }
+
+    // 底线
+    .line{
+        font-size: .38rem;
+        color: #A6A6A6;
+        text-align: center;
+        height: 1.8rem;
+        justify-content: center;
+    }
+}

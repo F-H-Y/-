@@ -1,0 +1,176 @@
+.Meituan{
+    .main{
+        // 头部
+        background:#ffc11b;
+        .nav{
+            width:100%;
+            height:8rem;
+            overflow: hidden;
+            position:relative;
+            .btn{
+                position: relative;
+                z-index:1;
+                margin:0 auto;
+                margin-top:1rem;
+                width:7rem;
+                height:1.6rem;
+                display: flex;
+                border-radius: 5rem;
+                align-items: center;
+                justify-content: center;
+                border:0.15rem solid #fff;
+                View{
+                    width:50%;
+                    text-align:center;
+                    font-size:0.5rem;
+                }
+                .btn_waimai{
+                    width:3.5rem;
+                    height:1.6rem;
+                    border-radius: 5rem 0rem 0rem 5rem;
+                    border:0.15rem solid #fff;
+                    line-height:1.6rem;
+                }
+
+                .btn_guoshu{
+                    width:3.5rem;
+                    height:1.6rem;
+                    line-height:1.6rem;
+                    border-radius: 0rem 5rem 5rem 0rem;
+                    border:0.15rem solid #fff;
+                }
+                
+                
+            }
+            image{
+                width:100%;
+                height:10rem;
+                position:absolute;
+                top:0;
+            }
+        }
+
+        // 使用步骤
+        .process{
+            width: 94vw;
+            height: 27vw;
+            background-color: #fdfeff;
+            border-radius: 3vw;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            padding: 4vw 16vw;
+            margin:0 auto;
+            View{
+                font-size: 4vw;
+                color: #121212;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                image{
+                    width: 12vw;
+                    height: 12vw;
+                    margin-bottom: 2vw;
+                }
+            }
+            .guo{
+                width: 3vw;
+                height: 3vw;
+                margin-top: 4vw;
+            }
+        }
+
+        // 二维码
+        .qrcode{
+            width: 94vw;
+            height: 71vw;
+            background-color: #fdfeff;
+            border-radius: 3vw;
+            margin: 3vw auto 0;
+            box-sizing: border-box;
+            padding-top: 6vw;
+            .qrcode_title{
+                font-size: 6vw;
+                color:#ffc11b;
+                font-style: italic;
+                font-weight: bold;
+                text-align: center;
+            }
+            image{
+                width: 35vw;
+                height: 35vw;
+                display: block;
+                margin: 4vw auto 0;
+            }
+
+            .btns{
+                width: 67vw;
+                margin: 5vw auto 0;
+                display: flex;
+                justify-content: space-between;
+                View{
+                    width: 31vw;
+                    height: 8vw;
+                    border-radius: 4vw;
+                    font-size: 4vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .btns1{
+                    color: #ffffff;
+                    background-color: #ffc11b;
+                }
+                .btns2{
+                    border: solid 1px #ffc11b;
+                    background-color: #ffffff;
+                    color: #ffc11b;
+                }
+
+
+            }
+        }
+
+        // 返利注意事项
+        .careful{
+            padding-bottom: 0.5rem;
+            .careful_main{
+                width: 94vw;
+                background-color: #fdfeff;
+                border-radius: 3vw;
+                margin: 3vw auto 24vw;
+                box-sizing: border-box;
+                padding: 5vw 6vw 6vw 5vw;
+               
+                .careful_title{
+                    font-size: 4vw;
+                    color: #ffc11b;
+                    display: flex;
+                    align-items: center;
+                    font-weight: bold;
+                    Text{
+                        width: 2vw;
+                        height: 2vw;
+                        background-color: #ffc11b;
+                        border-radius: 50%;
+                        display: inline-block;
+                        margin-right: 2vw;
+                    }
+                }
+                .careful_con{
+                    font-size: 3vw;
+                    color: #121212;
+                    margin-left: 3vw;
+                    margin-top: 4vw;
+                    line-height: 5vw;
+                    Text{
+                        color:rgb(255,54,68)
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
